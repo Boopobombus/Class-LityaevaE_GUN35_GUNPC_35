@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class-LityaevaE_GUN35_GUNPC_35.git", "Class-LityaevaE_GUN35_GUNPC_35.git\Class-LityaevaE_GUN35_GUNPC_35.git.csproj", "{5F3D4F3F-8AF6-448C-9D40-A11D6F737E85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F3D4F3F-8AF6-448C-9D40-A11D6F737E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F3D4F3F-8AF6-448C-9D40-A11D6F737E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F3D4F3F-8AF6-448C-9D40-A11D6F737E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F3D4F3F-8AF6-448C-9D40-A11D6F737E85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFC0B99A-E85C-429A-B8D6-AFE711A71E38}
+	EndGlobalSection
+EndGlobal
