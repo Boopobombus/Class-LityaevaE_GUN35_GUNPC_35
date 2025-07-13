@@ -11,41 +11,49 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
         private float _health;
         private float _armor;
         private int _damage;
+        private  Helm _helm;
+        private Shell _shell;  
+        private Boots _Boots;
         public string Name { get; }
         public float Health => _health;
-        public Unit() : this(name: "Unknown Unit")
+        public Unit() : this ( "Unknown Unit", 10)
         {
         }
-        public Unit(string name)
+        public Unit (string name, float health)
         {
             Name = name;
+            _health = health;
         }
         public float RealHealth()
-        { 
-            return Health * (1 + Armor); 
+        {
+            return Health * (1 + Armor);
         }
         public float Armor
         {
-            get { return (float) Math.Round(_armor, 2); }
-            set 
+            get { return (float)Math.Round(_armor, 2); }
+            set
             {
-            if (value >=0 || value <=1)
+                if (value >= 0 || value <= 1)
                 {
                     _armor = value;
-                     }
-            else { }
+                }
+                else { }
             }
         }
         public int Damage
-        { 
-            get {return _damage = 5; } 
-        }
-        public bool SetDamage (float value)
         {
-            
+            get { return _damage = 5; }
+        }
+        public bool SetDamage(float value)
+        {
+
             _health = Health - value * _armor;
             return _health >= 0;
         }
-        
-    }
+
+
+        public void EquipHelm(Helm helm) { _helm = helm; }
+        public void EquipShell(Shell shell) { _shell = shell; }
+         public void EquipBoots(Boots boots) {  _Boots = boots; }
+    } 
 }
