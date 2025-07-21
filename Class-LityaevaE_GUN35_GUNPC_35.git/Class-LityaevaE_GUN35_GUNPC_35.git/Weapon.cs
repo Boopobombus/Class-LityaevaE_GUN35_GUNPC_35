@@ -15,8 +15,7 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
         
         
         public string Name { get; }
-        public int MinDamage { get; private set; }
-        public string MaxDamage { get; private set; }
+        
         public float Durability { get; } = 1f;
 
         
@@ -30,7 +29,7 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
             
         }
 
-        public void SetDamageParams (int _minDamage, int _maxDamage)
+        public void SetDamageParams (int minDamage, int maxDamage)
         {
             if (_minDamage>_maxDamage)
             { int a = _minDamage;
@@ -48,9 +47,9 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
             }
            
         }
-        public int GetDamage 
+        public int GetDamage (int _minDamage , int _maxnDamage)
         {
-            get { return (_minDamage + _minDamage) / 2; }
+            return (_minDamage + _maxDamage) / 2;
         }
         
         

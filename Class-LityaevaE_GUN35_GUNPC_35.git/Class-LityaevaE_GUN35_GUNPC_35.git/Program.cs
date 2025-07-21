@@ -13,7 +13,7 @@ Helm helm = new Helm ();
 
 float.TryParse(s: Console.ReadLine(), out float armor); 
 unit.EquipHelm(helm);
-Console.WriteLine(armor);
+
 Console.WriteLine("Введите значение брони кирасы от 0 до 1:");
 Shell shell = new Shell ();
 float.TryParse(s: Console.ReadLine(), out float armor1);
