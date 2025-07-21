@@ -36,3 +36,5 @@ Console.Write("Фактическое значение здоровья равн
 Console.WriteLine(unit.RealHealth());
 float c = weapon.Durability;
 Console.WriteLine($"Прочность равна: {c}");
+
+

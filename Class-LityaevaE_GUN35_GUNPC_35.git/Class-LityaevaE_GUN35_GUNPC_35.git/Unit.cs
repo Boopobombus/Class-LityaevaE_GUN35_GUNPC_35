@@ -16,13 +16,13 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
         private Boots _Boots;
         public string Name { get; }
         public float Health => _health;
-        public Unit() : this ( "Unknown Unit", 10)
+        public Unit() : this ( "Unknown Unit")
         {
         }
-        public Unit (string name, float health)
+        public Unit (string name)
         {
             Name = name;
-            _health = health;
+            
         }
         public float RealHealth()
         {
