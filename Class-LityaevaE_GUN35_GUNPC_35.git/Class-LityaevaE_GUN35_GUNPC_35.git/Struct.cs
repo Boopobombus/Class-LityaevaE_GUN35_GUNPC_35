@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace Class_LityaevaE_GUN35_GUNPC_35.git
 {
-    public struct Internal
+    public struct Interval
 
     {
         private int minValue;//поле
         private int maxValue;
+        
         private float get;
 
         private float Get
@@ -24,7 +25,7 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
             }
         }
         
-        public Internal (int minValue,  int maxValue)
+        public Interval (int minValue,  int maxValue)
         { Min = minValue;
             Max = maxValue;
             

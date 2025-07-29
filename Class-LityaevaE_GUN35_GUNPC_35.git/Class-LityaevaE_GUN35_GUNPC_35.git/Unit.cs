@@ -14,6 +14,7 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
         private  Helm _helm;
         private Shell _shell;  
         private Boots _Boots;
+        public Interval _Damage { get; }
         public string Name { get; }
         public float Health => _health;
         public Unit() : this ( "Unknown Unit")

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.Design;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -10,8 +11,9 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
 {
     public class Weapon
     {
-        private int _minDamage;
-        private int _maxDamage;
+        /*private int _minDamage;
+        private int _maxDamage;*/
+        public Interval NewDamage {  get; set; }
         
         
         public string Name { get; }
@@ -19,16 +21,16 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
         public float Durability { get; } = 1f;
 
         
-        public Weapon(string name) : this("Sword", 1 , 10)
+        public Weapon(string name) : this ("Sword", new Interval(1, 0))
         { }
-        public Weapon(string name, int minDamage, int maxDamage)
+        public Weapon(string name, Interval newDamage /*int minDamage, int maxDamage*/)
         { Name = name;
-         
-            minDamage = _minDamage;
-            maxDamage = _maxDamage;
+            newDamage = NewDamage;
+            /*minDamage = _minDamage;
+            maxDamage = _maxDamage;*/
             
         }
-
+        /*
         public void SetDamageParams (int minDamage, int maxDamage)
         {
             if (_minDamage>_maxDamage)
@@ -46,10 +48,10 @@ namespace Class_LityaevaE_GUN35_GUNPC_35.git
                 { _maxDamage = 10;}
             }
            
-        }
-        public int GetDamage (int _minDamage , int _maxnDamage)
+        }*/
+        public int GetDamage ()
         {
-            return (_minDamage + _maxDamage) / 2;
+            return (minValue + maxValue ) / 2;
         }
         
         

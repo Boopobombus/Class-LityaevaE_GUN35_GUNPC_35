@@ -7,7 +7,7 @@ string name =  Console.ReadLine();
 
 Console.WriteLine("Введите начальное здоровье бойца (10-100):");
 int.TryParse(s: Console.ReadLine(), out int health);
-Unit unit = new Unit (name, health);
+Unit unit = new Unit (name);
 Console.WriteLine("Введите значение брони шлема от 0 до 1:");
 Helm helm = new Helm ();
 
@@ -37,4 +37,8 @@ Console.WriteLine(unit.RealHealth());
 float c = weapon.Durability;
 Console.WriteLine($"Прочность равна: {c}");
 
+var dungeon = new Dungeon();
+
+Dungeon dungeons = new Dungeon();
+dungeons.ShowRoom();
 
